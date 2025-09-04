@@ -25,7 +25,8 @@ Fonts:
 
 /* Set up the main font and background color for the whole page */
 body {
-  background-color: #f4f8fb; /* Soft light blue for a fresh look */
+  background: url('img/Screenshot 2025-08-28 131411.png') center center/contain no-repeat #f4f8fb;
+  min-height: 120vh;
   font-family: 'Avenir', 'Proxima Nova', Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -35,13 +36,13 @@ body {
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f7fafc; /* Light background */
+  background: #b1d2e8; /* Light background */
   color: #222;
 }
 
 /* Header styles */
 header {
-  background: #fff;
+  background: #e6edb4;
   padding: 20px;
   text-align: center;
 }
@@ -58,7 +59,7 @@ header {
   background: url('img/Screenshot 2025-08-28 131411.png') center/cover no-repeat; /* Background image: Screenshot 2025-08-28 131411.png */
   border-radius: 8px;
   margin: 30px auto;
-  max-width: 600px;
+  max-width: 1200px;
   color: #fff; /* Make text white for contrast */
   overflow: hidden;
 }
@@ -81,7 +82,6 @@ header {
 .hero .cta-btn {
   position: relative;
   z-index: 2;
-}
 }
 
 .hero h1 {
@@ -117,17 +117,17 @@ header {
 
 /* Footer styles */
 footer {
-  background: #fff;
+  background: #f2f997;
   text-align: center;
   padding: 15px 0;
   font-size: 0.9em;
-  color: #888;
+  color: #0d0d0d;
   margin-top: 40px;
 }
 
 /* Add a slight shadow and rounded corners to each section for depth */
 section {
-  background: #fff; /* White background for sections */
+  background: #2576ac; /* White background for sections */
   border-radius: 12px; /* Rounded corners */
   box-shadow: 0 2px 8px rgba(46, 157, 247, 0.07); /* Soft blue shadow */
   margin: 24px 10px; /* Space between sections */
@@ -139,11 +139,11 @@ section {
   position: relative; /* Needed for overlay */
   /* Set a background image that covers the whole section */
   background-image: url('img/Screenshot 2025-08-28 131411.png');
-  background-color: #b0e0fe; /* Powder blue */
+  background-color: #307097; /* Powder blue */
   background-size: cover;      /* Make the image cover the whole area */
   background-position: left center; /* Left align the image */
   background-repeat: no-repeat;
-  color: #fff;                 /* White text for contrast */
+  color: #fafcfc;                 /* White text for contrast */
   text-align: center;          /* Center the text */
   padding: 60px 20px;          /* Add space above and below */
   border-radius: 0 0 16px 16px; /* Only round bottom corners */
