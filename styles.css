@@ -31,6 +31,99 @@ body {
   padding: 0;
   color: #222;
 }
+/* Basic reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7fafc; /* Light background */
+  color: #222;
+}
+
+/* Header styles */
+header {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 150px;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 40px 20px;
+  background: url('img/Screenshot 2025-08-28 131411.png') center/cover no-repeat; /* Background image: Screenshot 2025-08-28 131411.png */
+  border-radius: 8px;
+  margin: 30px auto;
+  max-width: 600px;
+  color: #fff; /* Make text white for contrast */
+  overflow: hidden;
+}
+
+/* Overlay for hero background */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent dark overlay */
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.hero h1,
+.hero p,
+.hero .cta-btn {
+  position: relative;
+  z-index: 2;
+}
+}
+
+.hero h1 {
+  color: #0077c2; /* Brand blue */
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.hero-img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+/* CTA button */
+.cta-btn {
+  background: #ffd700; /* Gold */
+  color: #222;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cta-btn:hover {
+  background: #ffc300;
+}
+
+/* Footer styles */
+footer {
+  background: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9em;
+  color: #888;
+  margin-top: 40px;
+}
 
 /* Add a slight shadow and rounded corners to each section for depth */
 section {
@@ -45,9 +138,10 @@ section {
 .hero {
   position: relative; /* Needed for overlay */
   /* Set a background image that covers the whole section */
-  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80');
+  background-image: url('img/Screenshot 2025-08-28 131411.png');
+  background-color: #b0e0fe; /* Powder blue */
   background-size: cover;      /* Make the image cover the whole area */
-  background-position: center; /* Center the image */
+  background-position: left center; /* Left align the image */
   background-repeat: no-repeat;
   color: #fff;                 /* White text for contrast */
   text-align: center;          /* Center the text */
