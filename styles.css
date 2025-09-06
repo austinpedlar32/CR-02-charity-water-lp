@@ -1,3 +1,24 @@
+/* Responsive styles for hero two-column layout */
+@media (max-width: 700px) {
+  .hero.two-column {
+    flex-direction: column;
+    max-width: 98vw;
+    min-height: 0;
+    padding: 20px 5px;
+  }
+  .left-column, .right-column {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 10px 0;
+    align-items: center;
+    text-align: center;
+  }
+  .right-btn {
+    margin-top: 18px;
+    margin-bottom: 8px;
+  }
+}
+  margin-top: 24px;
 /* charity: water Brand Colors & Fonts
 
 Primary Colors:
@@ -25,7 +46,8 @@ Fonts:
 
 /* Set up the main font and background color for the whole page */
 body {
-  background: url('img/Screenshot 2025-08-28 131411.png') center center/contain no-repeat #f4f8fb;
+  background: url('img/Screenshot 2025-08-28 131411.png') 0% 0%/contain no-repeat #f4f8fb;
+  /* background-position: 70% 30%;  Move image horizontally and vertically to show child's face */
   min-height: 120vh;
   font-family: 'Avenir', 'Proxima Nova', Arial, sans-serif;
   margin: 0;
@@ -43,21 +65,61 @@ body {
 /* Header styles */
 header {
   background: #e6edb4;
-  padding: 20px;
-  text-align: center;
-}
-
+  padding: 8px 0;
+/* Make logo smaller for compact header */
 .logo {
-  width: 150px;
+  width: 90px;
+}
+  text-align: center;
 }
 
-/* Hero section */
-.hero {
-  position: relative;
-  text-align: center;
+/* Two-column hero section */
+.hero.two-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   padding: 40px 20px;
-  background: url('img/Screenshot 2025-08-28 131411.png') center/cover no-repeat; /* Background image: Screenshot 2025-08-28 131411.png */
+  background: url('img/Screenshot 2025-08-28 131411.png') left center/contain no-repeat #f4f8fb;
   border-radius: 8px;
+  margin: 30px auto;
+  max-width: 1000px;
+  color: #fdfafa;
+  min-height: 400px;
+}
+
+.left-column {
+  flex: 1 1 350px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 0;
+}
+
+/* Center the Donate Now button in the left column */
+.left-column .cta-btn {
+  align-self: center;
+  margin-top: 16px;
+  justify-content: center;
+}
+
+.right-column {
+  flex: 1 1 350px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 220px;
+  justify-content: center;
+}
+
+.side-img {
+  width: 180px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.10);
+}
   margin: 30px auto;
   max-width: 1200px;
   color: #fff; /* Make text white for contrast */
